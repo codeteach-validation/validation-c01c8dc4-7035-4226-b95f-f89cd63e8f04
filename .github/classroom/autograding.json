@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "Test 1: Syntax Check",
+      "run": "python3 -c \"import json; json.load(open('ITAI1378 - Assignment 1.ipynb'))\"",
+      "points": 9,
+      "input": "",
+      "output": "",
+      "setup": "",
+      "timeout": 60,
+      "comparison": "exit_code"
+    },
+    {
+      "name": "Test 2: Library Import",
+      "run": "jupyter nbconvert --to notebook --execute ITAI1378 - Assignment 1.ipynb --stdout",
+      "points": 9,
+      "input": "",
+      "output": "Libraries imported successfully.",
+      "setup": "",
+      "timeout": 60,
+      "comparison": "included"
+    },
+    {
+      "name": "Test 3: Image Download",
+      "run": "jupyter nbconvert --to notebook --execute ITAI1378 - Assignment 1.ipynb --stdout",
+      "points": 9,
+      "input": "",
+      "output": "Image downloaded and saved as fruits.jpg.",
+      "setup": "",
+      "timeout": 60,
+      "comparison": "included"
+    },
+    {
+      "name": "Test 4: Image Load",
+      "run": "jupyter nbconvert --to notebook --execute ITAI1378 - Assignment 1.ipynb --stdout",
+      "points": 9,
+      "input": "",
+      "output": "Image loaded successfully.",
+      "setup": "",
+      "timeout": 60,
+      "comparison": "included"
+    },
+    {
+      "name": "Test 5: Image Type and Shape",
+      "run": "jupyter nbconvert --to notebook --execute ITAI1378 - Assignment 1.ipynb --stdout",
+      "points": 9,
+      "input": "",
+      "output": "Type of image: <class 'numpy.ndarray'>\nShape of image:",
+      "setup": "",
+      "timeout": 60,
+      "comparison": "included"
+    },
+    {
+      "name": "Test 6: BGR to RGB Conversion",
+      "run": "jupyter nbconvert --to notebook --execute ITAI1378 - Assignment 1.ipynb --stdout",
+      "points": 9,
+      "input": "",
+      "output": "<Figure size",
+      "setup": "",
+      "timeout": 60,
+      "comparison": "included"
+    },
+    {
+      "name": "Test 7: RGB Image Display",
+      "run": "jupyter nbconvert --to notebook --execute ITAI1378 - Assignment 1.ipynb --stdout",
+      "points": 9,
+      "input": "",
+      "output": "<Figure size",
+      "setup": "",
+      "timeout": 60,
+      "comparison": "included"
+    },
+    {
+      "name": "Test 8: RGB Channels Display",
+      "run": "jupyter nbconvert --to notebook --execute ITAI1378 - Assignment 1.ipynb --stdout",
+      "points": 9,
+      "input": "",
+      "output": "<Figure size",
+      "setup": "",
+      "timeout": 60,
+      "comparison": "included"
+    },
+    {
+      "name": "Test 9: Final Reflection",
+      "run": "python3 -c \"import json,sys; nb=json.load(open(sys.argv[1], encoding='utf-8')); print('\\n'.join((''.join(cell.get('source', [])) if isinstance(cell.get('source'), list) else str(cell.get('source', ''))) for cell in nb.get('cells', [])))\" 'ITAI1378 - Assignment 1.ipynb'",
+      "points": 28,
+      "input": "",
+      "output": "1. An image represents a grid of pixels to a computer",
+      "setup": "",
+      "timeout": 60,
+      "comparison": "included"
+    }
+  ]
+}
